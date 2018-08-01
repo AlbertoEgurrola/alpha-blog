@@ -3,21 +3,22 @@
 <head>
 	<title>Alpha-Blog - About</title>
 </head>
-<body>
-	<div align="center" valign="center">
-		<%= link_to image_tag('blog.png', style: 'width:5%;'), root_path %>
-	</div>
-	<div >
-		<ul>
-			<li>
-				<a href="">
-					<%= link_to 'Home', root_path %>
-					<!--%= link_to image_tag('blog.png'), 'http://www.google.com' %-->
-				</a>
+<body <%= stylesheet_link_tag "/stylesheets/pages/main.css" %> >
+	<div class="wrap">
+		<div align="center" valign="center">
+			<%= link_to image_tag('blog.png', style: 'width:5%;'), root_path %>
+		</div>
+		<div >
+			<ul>
+				<li>
+					<a href="">
+						<%= link_to 'Home', root_path %>
+						<!--%= link_to image_tag('blog.png'), 'http://www.google.com' %-->
+					</a>
 
-			</li>
-		</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
-
 </body>
 </html>
